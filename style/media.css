@@ -1,0 +1,69 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .banner {
+    height: 570px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .col-6 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 300px;
+  }
+  .col-6 {
+    width: 100%;
+    padding: 0;
+  }
+  .banner {
+    height: 400px;
+  }
+  .cars {
+    margin-top: 5px;
+  }
+  .slider {
+    height: 180px;
+    margin-top: 15px;
+  }
+  .contact__title {
+    margin: 40px 0 10px;
+  }
+  .header__nav {
+    position: relative;
+  }
+  .cars__card-title {
+    font-family: "Times New Roman", Times, serif;
+  }
+  .cars__card-text {
+    font-family: "Times New Roman", Times, serif;
+  }
+  .header__nav {
+    position: relative;
+  }
+  .header__menu {
+    position: absolute;
+    flex-direction: column;
+    row-gap: 5px;
+    top: 30px;
+    transition: 0.7s;
+  }
+  .show-menu {
+    height: 180px;
+  }
+  .mobile-btn {
+    display: block;
+    width: 45px;
+  }
+}/*# sourceMappingURL=media.css.map */

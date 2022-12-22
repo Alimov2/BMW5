@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 0 15px;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+$primeBlack: #252525;
+$primeWhite: #fafafa;
+
+@mixin colors( $bgc, $color,$brc){
+    background-color: $bgc;
+    color: $color;
+    border: 1px solid $brc;
+}
+
+@import "./header.scss";
+@import "./banner.scss";
+@import "./slider.scss";
+@import "./cars.scss";
+@import"./contact.scss";
+@import"./footer.scss";
+@import"./media.scss";

@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+.header {
+  padding: 30px 0;
+  background-color: #252525;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  color: #fafafa;
+  text-transform: uppercase;
+}
+.header__menu {
+  display: flex;
+  column-gap: 50px;
+}
+.header__menu-li {
+  list-style: none;
+}
+.header__menu-li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fafafa;
+}
+
+.banner {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.slider {
+  height: 400px;
+  margin-top: 50px;
+}
+
+.cars {
+  margin-top: 300px;
+}
+.cars__card {
+  padding: 20px;
+  border-bottom: 1px solid #252525;
+  border-top: 10px;
+}
+.cars__card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.contact__title {
+  margin: 100px 0 50px;
+}
+.contact__menu-li {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.contact__menu-li a {
+  color: #252525;
+  text-decoration: none;
+}
+.contact__form {
+  border-radius: 20px;
+  padding: 20px;
+  border: solid 1px;
+}
+.contact__form-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #252525;
+  outline: none;
+}
+.contact__form-btn {
+  background-color: transparent;
+  color: #252525;
+  border: 1px solid #252525;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact__form-btn:hover {
+  background-color: #252525;
+  color: #fafafa;
+  border: 1px solid #252525;
+}
+
+.footer {
+  background-color: #252525;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+.footer__copyright {
+  color: #fafafa;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .cars__card-title {
+    font-family: "Times New Roman", Times, serif;
+  }
+  .cars__card-text {
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .banner {
+    height: 570px;
+  }
+  .cars__card-title {
+    font-family: "Times New Roman", Times, serif;
+  }
+  .cars__card-text {
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .cars__card-title {
+    font-family: "Times New Roman", Times, serif;
+  }
+  .cars__card-text {
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .banner {
+    height: 350px;
+  }
+  .header {
+    padding: 10px 0;
+  }
+  .cars {
+    margin-top: 5px;
+  }
+  .slider {
+    height: 300px;
+  }
+  .contact__menu-li {
+    font-size: 20px;
+  }
+  .header {
+    position: relative;
+    z-index: 5;
+  }
+  .header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 5;
+  }
+  .header__logo {
+    position: relative;
+    z-index: 5;
+  }
+  .header__menu {
+    background-color: #252525;
+    position: absolute;
+    left: 0;
+    column-gap: 10px;
+    justify-content: center;
+    width: 100%;
+    top: -10px;
+    padding: 10px 0;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  .header__menu-li {
+    font-size: 11px;
+  }
+  .header__menu-show {
+    top: 60px;
+  }
+  .mobile-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    width: 50px;
+  }
+  .mobile-btn span,
+  .mobile-btn span::before,
+  .mobile-btn span::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #fafafa;
+    position: absolute;
+    z-index: 10;
+    display: block;
+  }
+  .mobile-btn span {
+    position: relative;
+  }
+  .mobile-btn span::before {
+    top: -15px;
+  }
+  .mobile-btn span::after {
+    bottom: -15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
